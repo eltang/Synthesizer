@@ -11,23 +11,99 @@
     tools:context="org.pltw.examples.synthesizer.SynthesizerActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_height="100dp"
+        android:text="Hello World!"
+        android:id="@+id/message"
+        android:layout_width="300dp" />
 
-    <Button
-        android:text="@string/eButton"
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/eButton"
-        android:onClick="onButton1Click" />
+        android:layout_marginTop="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:rowCount="4"
+        android:columnCount="3"
+        android:id="@+id/gridLayout">
 
-    <Button
-        android:text="@string/fButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/fButton"
-        android:onClick="onButton2Click"
-        android:layout_below="@+id/eButton"
-        android:layout_alignParentStart="true" />
+        <Button
+            android:text="Button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button1"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="onPlayerAction" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button2"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:onClick="onPlayerAction" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button3"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:onClick="onPlayerAction" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button4"
+            android:onClick="onPlayerAction" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button5"
+            android:onClick="onPlayerAction" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button6"
+            android:onClick="onPlayerAction" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button7"
+            android:onClick="onPlayerAction" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button8"
+            android:onClick="onPlayerAction" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button9"
+            android:onClick="onPlayerAction" />
+
+        <Button
+            android:text="RESET"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button10"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:onClick="onReset" />
+
+    </GridLayout>
+
 </RelativeLayout>
